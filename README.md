@@ -14,7 +14,22 @@ So that I can browse my previous entries
 I want to see a list of Diary Entry Titles
 ```
 
+## Objects
 
+DiaryEntry
+
+| Object | Messages |
+| --- | --- |
+| | id |
+| | title |
+| | body |
+
+Diary
+
+| Object | Messages |
+| --- | --- |
+| | entries |
+| | add_entry(entry) |
 
 ## Tables
 
@@ -23,4 +38,5 @@ Diary Entry
 | fields | type |
 | --- | --- |
 | id | SERIAL PRIMARY KEY |
+| title | VARCHAR(300) |
 | body | VARCHAR(5000) |
