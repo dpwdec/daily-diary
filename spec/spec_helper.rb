@@ -1,4 +1,7 @@
 # require 'rspec'
+
+# Capybara
+
 ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
@@ -7,6 +10,18 @@ require 'capybara'
 require 'capybara/rspec'
 
 Capybara.app = DiaryApp
+
+require 'simplecov'
+require 'simplecov-console'
+
+# Test coverage
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::Console,
+])
+SimpleCov.start
+
+# RSpec base configurations
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

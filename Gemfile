@@ -8,8 +8,8 @@ source "https://rubygems.org"
 gem 'rspec'
 gem 'capybara'
 gem 'sinatra'
-gem 'simplecov', require: false
-gem 'simplecov-console', require: false
+gem 'simplecov'
+gem 'simplecov-console'
 gem 'pg'
 
 group :development, :test do
