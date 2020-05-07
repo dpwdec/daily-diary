@@ -1,21 +1,22 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Documents/week-4/daily-diary/spec/features/add_entry_spec.rb": {
+      "/Users/student/Documents/week-4/daily-diary/spec/units/diary_entry_spec.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          null,
           1,
           null,
           null
         ]
+      },
+      "/Users/student/Documents/week-4/daily-diary/lib/diary_entry.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1588844941
+    "timestamp": 1588845325
   }
 }
