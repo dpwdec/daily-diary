@@ -1,8 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Documents/week-4/daily-diary/spec/features/testing_framework_spec.rb": {
+      "/Users/student/Documents/week-4/daily-diary/spec/features/add_diary_body_spec.rb": {
         "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -12,6 +14,6 @@
         ]
       }
     },
-    "timestamp": 1588842978
+    "timestamp": 1588844168
   }
 }

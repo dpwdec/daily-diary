@@ -14,4 +14,5 @@ gem 'pg'
 
 group :development, :test do
   gem "rubocop", "0.79.0"
+  gem 'guard-rspec'
 end
