@@ -14,6 +14,8 @@ So that I can browse my previous entries
 I want to see a list of Diary Entry Titles
 ```
 
+
+
 ## Tables
 
 Diary Entry
