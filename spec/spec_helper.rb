@@ -1,5 +1,7 @@
 # require 'rspec'
 
+# database testing
+
 require_relative './setup_test_database.rb'
 ENV['ENVIRONMENT'] = 'test'
 
@@ -16,6 +18,8 @@ Capybara.app = DiaryApp
 
 require 'simplecov'
 require 'simplecov-console'
+
+require 'features/database_helpers'
 
 # Test coverage
 

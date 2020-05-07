@@ -19,17 +19,20 @@
         "lines": [
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
+          null
+        ]
+      },
+      "/Users/student/Documents/week-4/daily-diary/spec/features/view_entry_spec.rb": {
+        "lines": [
+          1,
           1,
           null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
           null,
           null
         ]
@@ -58,19 +61,6 @@
           1,
           1,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Documents/week-4/daily-diary/lib/diary_entry.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          11,
-          11,
-          11,
           null,
           null
         ]
@@ -105,47 +95,8 @@
           null,
           null
         ]
-      },
-      "/Users/student/Documents/week-4/daily-diary/lib/diary.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          4,
-          null,
-          4,
-          null,
-          4,
-          8,
-          null,
-          null,
-          4,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          null,
-          2,
-          null,
-          null,
-          1,
-          null,
-          1,
-          6,
-          6,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1588850069
+    "timestamp": 1588850693
   }
 }
