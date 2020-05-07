@@ -23,4 +23,9 @@ class DiaryApp < Sinatra::Base
     Diary.add_entry(params[:title], params[:body])
     redirect('/entries')
   end
+
+  get '/entry/:id' do
+    @entry = Diary.get_entry(params[:id])
+    erb(:entry)
+  end
 end

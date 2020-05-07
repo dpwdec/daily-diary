@@ -34,6 +34,7 @@ Diary
 | --- | --- |
 | | entries |
 | | add_entry(entry) |
+| | get_entry(id) |
 
 ## Tables
 
