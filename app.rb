@@ -4,6 +4,7 @@ require './lib/diary'
 
 class DiaryApp < Sinatra::Base
 
+  use Rack::MethodOverride
   enable :sessions
 
   get '/' do
@@ -13,6 +14,11 @@ class DiaryApp < Sinatra::Base
   get '/entries' do
     @entries = Diary.entries
     erb(:entries)
+  end
+
+  patch '/entries' do
+    Diary.update_entry(params[:id], params[:title], params[:body])
+    redirect('/entries')
   end
 
   get '/add-entry' do
@@ -27,5 +33,10 @@ class DiaryApp < Sinatra::Base
   get '/entry/:id' do
     @entry = Diary.get_entry(params[:id])
     erb(:entry)
+  end
+
+  get '/entry/:id/edit' do
+    @entry = Diary.get_entry(params[:id])
+    erb(:edit_entry)
   end
 end
