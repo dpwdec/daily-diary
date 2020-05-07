@@ -5,6 +5,7 @@ class DiaryApp < Sinatra::Base
   enable :sessions
 
   get '/' do
+    @title = session[:title]
     @entry = session[:body]
     erb(:index)
   end
@@ -14,6 +15,7 @@ class DiaryApp < Sinatra::Base
   end
 
   post '/add-entry' do
+    session[:title] = params[:title]
     session[:body] = params[:body]
     redirect('/')
   end
