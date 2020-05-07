@@ -18,7 +18,7 @@ class DiaryApp < Sinatra::Base
   end
 
   post '/add-entry' do
-    session[:entry] = DiaryEntry.new(1, params[:title], params[:body])
+    Diary.add_entry(params[:title], params[:body])
     redirect('/entries')
   end
 end

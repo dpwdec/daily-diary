@@ -33,7 +33,7 @@ Diary
 
 ## Tables
 
-Diary Entry
+entries
 
 | fields | type |
 | --- | --- |
