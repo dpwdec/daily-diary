@@ -9,8 +9,7 @@ class DiaryApp < Sinatra::Base
   end
 
   get '/entries' do
-    @title = session[:title]
-    @entry = session[:body]
+    @entry = session[:entry]
     erb(:index)
   end
 
@@ -19,8 +18,7 @@ class DiaryApp < Sinatra::Base
   end
 
   post '/add-entry' do
-    session[:title] = params[:title]
-    session[:body] = params[:body]
+    session[:entry] = DiaryEntry.new(1, params[:title], params[:body])
     redirect('/entries')
   end
 end
