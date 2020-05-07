@@ -12,7 +12,7 @@ class DiaryApp < Sinatra::Base
 
   get '/entries' do
     @entries = Diary.entries
-    erb(:index)
+    erb(:entries)
   end
 
   get '/add-entry' do
