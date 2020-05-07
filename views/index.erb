@@ -1,2 +1,5 @@
-<p> <%= @entry.title %> </p>
-<p> <%= @entry.body %> </p>
+
+<% @entries.each do |entry| %>
+<p> <%= entry.title %> </p>
+<p> <%= entry.body %> </p>
+<% end %>

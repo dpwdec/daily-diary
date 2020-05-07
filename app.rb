@@ -9,7 +9,7 @@ class DiaryApp < Sinatra::Base
   end
 
   get '/entries' do
-    @entry = session[:entry]
+    @entries = Diary.entries
     erb(:index)
   end
 
